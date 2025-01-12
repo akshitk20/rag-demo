@@ -19,7 +19,7 @@ public class IngestionService implements CommandLineRunner {
     //this comes in because we have pg vector store on the class path autoconfiguration kicks in and bean of type
     // vector store is wired up
     private final VectorStore vectorStore;
-    @Value("classpath:/docs/article_thebeatoct2024.pdf")
+    @Value("classpath:/docs/spring-boot-reference.pdf")
     private Resource marketPDF;
     public IngestionService(VectorStore vectorStore) {
         this.vectorStore = vectorStore;
